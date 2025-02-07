@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter_svg: ^2.0.17
+  flutter_credit_card: ^4.0.1
   flutter:
     sdk: flutter
 
@@ -46,7 +47,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -65,6 +66,9 @@ flutter:
     - assets/images/basket.png
     - assets/images/card.svg
     - assets/images/paypal.svg
+    - assets/images/check_icon.svg
+    - assets/images/master_card_logo.svg
+    - assets/images/barcode_icon.svg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

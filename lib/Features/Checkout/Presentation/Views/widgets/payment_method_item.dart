@@ -5,8 +5,10 @@ class PaymentMethodItem extends StatelessWidget {
   const PaymentMethodItem({
     super.key,
     this.isActive = false,
+    required this.image,
   });
   final bool isActive;
+  final String image;
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
@@ -36,10 +38,10 @@ class PaymentMethodItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
-            child: SvgPicture.asset(
-          'assets/images/card.svg',
-          height: 30,
-        )),
+          child: SvgPicture.asset(
+            image,
+          ),
+        ),
       ),
     );
   }
