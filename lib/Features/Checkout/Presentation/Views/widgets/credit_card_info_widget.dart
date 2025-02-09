@@ -13,8 +13,7 @@ class CreditCardInfoWidget extends StatelessWidget {
       width: 305,
       height: 80,
       decoration: ShapeDecoration(
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         color: Colors.white,
       ),
       child: Padding(

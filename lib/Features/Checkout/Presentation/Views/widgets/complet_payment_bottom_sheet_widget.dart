@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_payment/Features/Checkout/Presentation/Views/widgets/custom_button_bloc_consumer.dart';
 import 'package:flutter_payment/Features/Checkout/Presentation/Views/widgets/payment_methods_list_view.dart';
 import 'package:flutter_payment/core/widgets/custom_button.dart';
 
@@ -19,7 +20,7 @@ class CompletePaymentBottomSheet extends StatelessWidget {
           SizedBox(
             height: 32,
           ),
-          CustomButton(title: 'Continue', onTab: () {}),
+          CustomButtonBlocConsumer(),
         ],
       ),
     );

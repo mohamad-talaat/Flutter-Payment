@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_payment/core/utils/styles.dart';
 
 class CartInfoItemWidget extends StatelessWidget {
-  const CartInfoItemWidget({super.key, required this.title, required this.value});
+  const CartInfoItemWidget(
+      {super.key, required this.title, required this.value});
   final String title, value;
 
   @override

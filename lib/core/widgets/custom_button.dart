@@ -6,9 +6,11 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.title,
     required this.onTab,
+    this.isLoading = false,
   });
   final String title;
   final GestureTapCallback onTab;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +26,13 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Text(
-            title,
-            textAlign: TextAlign.center,
-            style: Styles.style22,
-          ),
+          child: isLoading
+              ? const CircularProgressIndicator()
+              : Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: Styles.style22,
+                ),
         ),
       ),
     );
