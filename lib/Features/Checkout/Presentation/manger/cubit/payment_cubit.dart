@@ -15,13 +15,14 @@ class PaymentCubit extends Cubit<PaymentState> {
     emit(PaymentLoading());
     var data = await checkOutRepo.makePayment(
         paymentIntentInputModel: paymentIntentInputModel);
-    data.fold(
-        (left) => emit(
-              PaymentFailure(
-                errMessage: left.toString(),
-              ),
-            ),
-        (right) => emit(PaymentSuccess()));
+    data.fold((left) {
+      emit(
+        PaymentFailure(
+          errMessage: left.toString(),
+        ),
+      );
+      log(left.errMessage);
+    }, (right) => emit(PaymentSuccess()));
   }
 
   @override

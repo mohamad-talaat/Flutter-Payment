@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_payment/Features/Checkout/Presentation/Views/widgets/custom_button_bloc_consumer.dart';
 import 'package:flutter_payment/Features/Checkout/Presentation/Views/widgets/payment_methods_list_view.dart';
-import 'package:flutter_payment/core/widgets/custom_button.dart';
 
-class CompletePaymentBottomSheet extends StatelessWidget {
+class CompletePaymentBottomSheet extends StatefulWidget {
   const CompletePaymentBottomSheet({super.key});
+
+  @override
+  State<CompletePaymentBottomSheet> createState() =>
+      _CompletePaymentBottomSheetState();
+}
+
+class _CompletePaymentBottomSheetState
+    extends State<CompletePaymentBottomSheet> {
+  int activeIndex = 0;
+
+  void updateActiveIndex(int index) {
+    setState(() {
+      activeIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +30,15 @@ class CompletePaymentBottomSheet extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          PaymentMethods(),
+          PaymentMethods(
+            onSelected: updateActiveIndex,
+          ),
           SizedBox(
             height: 32,
           ),
-          CustomButtonBlocConsumer(),
+          CustomButtonBlocConsumer(
+            activeIndex: activeIndex,
+          ),
         ],
       ),
     );

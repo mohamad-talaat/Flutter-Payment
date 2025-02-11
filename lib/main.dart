@@ -21,6 +21,16 @@ class CheckOutApp extends StatelessWidget {
 }
 
 // Stripe
+
+// Payment without save cards
 // 1- paymentIntent(amount, currency)
 // 2- initPaymentSheet(paymentIntentClientSecret)
 // 3- presentPaymentSheet()
+
+// payment with save cards
+
+// 1- create customer({name , email,phone,............,customerId})
+// 2- paymentIntent(amount, currency,customerId)
+// 3- createEphemeralKey(customerId)
+// 4- initpaymentSheet(merchantDisplayName , intentClientSecret,ephemeralKey)
+// 5- presentPaymentSheet()

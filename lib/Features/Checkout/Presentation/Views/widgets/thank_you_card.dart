@@ -27,7 +27,7 @@ class ThankYouCard extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Thank your!',
+              'Thank you!',
               style: Styles.style25,
             ),
             Text(

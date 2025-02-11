@@ -7,11 +7,13 @@ class PaymentDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
+    return CustomScrollView(
       physics: BouncingScrollPhysics(),
       slivers: [
         SliverToBoxAdapter(
-          child: PaymentMethods(),
+          child: PaymentMethods(
+            onSelected: (int value) {},
+          ),
         ),
         SliverToBoxAdapter(
           child: CustomCreditCard(),
