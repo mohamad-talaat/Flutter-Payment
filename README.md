@@ -2,15 +2,53 @@
 
 A new Flutter project.
 
-## Getting Started
+## Demo Video
 
-This project is a starting point for a Flutter application.
+Watch the following video for a quick overview of the app's features:
 
-A few resources to get you started if this is your first Flutter project:
+<details>
+<summary>Click to View Demo Video</summary>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/user-attachments/assets/20e953bd-4fe9-4dac-8b60-265bd2e57e43
+
+
+
+
+<center>
+    <video width="600" controls>
+      <source src="Flutter-Payment/ss/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+ </center>
+
+</details>
+
+**Note:** You may need to click on the video to start playback.
+### Main Features
+
+1. **User-Friendly Interface**:
+   - Intuitive design for easy navigation during the checkout process.
+
+2. **Payment Gateway Integration**:
+   - Supports popular payment gateways such as Stripe and PayPal for secure transactions.
+
+3. **Responsive Design**:
+   - Optimized for various screen sizes, ensuring a consistent experience on both mobile and tablet devices.
+
+4. **Real-Time Validation**:
+   - Input fields are validated in real-time to reduce errors and improve user experience.
+
+5. **Order Summary**:
+   - Displays a clear summary of the items being purchased, including prices and quantities.
+
+6. **Secure Payment Processing**:
+   - Implements security measures to protect user data during transactions.
+
+7. **Customization Options**:
+   - Allows for customization of the UI elements to match branding requirements.
+
+8. **Error Handling**:
+   - Provides informative error messages to guide users in case of issues during the checkout process.
+
+These features aim to enhance the overall user experience during the payment process, making it efficient and secure.
