@@ -15,7 +15,7 @@ jobs:
           channel: 'stable'
           architecture: x64
 
-      - run: flutter pub get
+      - run: flutter pub get 
 
       # Ensure the Podfile has the correct platform
       - name: Set iOS deployment target
@@ -46,11 +46,11 @@ jobs:
         run: zip -qq -r -9 FlutterIpaExport.ipa Payload
         working-directory: build/ios/iphoneos
 
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/ios/iphoneos/FlutterIpaExport.ipa
-          tag: v1.0
-          overwrite: true
-          body: "This is first release"
+  #    - name: Upload binaries to release
+   #     uses: svenstaro/upload-release-action@v2
+    #    with:
+     #     repo_token: ${{ secrets.GITHUB_TOKEN }}
+      #    file: build/ios/iphoneos/FlutterIpaExport.ipa
+       #   tag: v1.0
+        #  overwrite: true
+         # body: "This is first release"
