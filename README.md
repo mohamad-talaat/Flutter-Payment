@@ -16,8 +16,7 @@ Watch the following video for a quick overview of the app's features:
 
 
 
-https://github.com/user-attachments/assets/b6c2e233-ea93-4552-9c1d-bb6739fad3e1
-
+ 
 
 
 
