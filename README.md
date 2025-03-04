@@ -10,7 +10,10 @@ Watch the following video for a quick overview of the app's features:
 <summary>Click to View Demo Video</summary>
 
 
-https://github.com/user-attachments/assets/20e953bd-4fe9-4dac-8b60-265bd2e57e43
+ 
+
+https://github.com/user-attachments/assets/56abe5cc-db14-4223-92d3-9ef2d60b098e
+
 
 
 
